@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buyer Dashboard</title>
+  <link rel="stylesheet" href="buyer-dashboard.css">
+  <style type="text/css">
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+}
+
+/* Layout */
+.dashboard-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #111;
+  color: #fff;
+  padding: 25px 20px;
+}
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 12px 0;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+  color: #FFD333;
+}
+
+.logo {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.menu a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #FFD333;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.page-header {
+  margin-bottom: 25px;
+}
+
+.page-header h1 {
+  font-size: 26px;
+}
+
+.page-header p {
+  color: #666;
+}
+
+/* Grid */
+.downloads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.download-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.download-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.download-card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.download-card span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #FFD333;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.text-center.logo-top img {
+  margin-bottom: 20px;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="dashboard-wrapper">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <a href="index.html" class="text-center logo-top"><img src="img/digi-logo.png" style="width:180px"></a>
+    
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="buyer-downloads.html" class="active">My Downloads</a>
+      <a href="upload-product.html">Upload Product</a>
+      <a href="sales.html">Sales</a>
+      <a href="profile.html">Profile</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <div class="page-header">
+      <h1>My Downloads</h1>
+      <p>Your purchased digital assets</p>
+    </div>
+
+    <div class="downloads-grid">
+
+      <div class="download-card">
+        <img src="img/back2.jpg">
+        <h3>Desktop</h3>
+        <span>Purchased: 12 Jan 2026</span>
+        <a href="#" class="btn">Download</a>
+      </div>
+
+      <div class="download-card">
+        <img src="img/blog1.jpg">
+        <h3>Tablet</h3>
+        <span>Purchased: 08 Jan 2026</span>
+        <a href="#" class="btn">Download</a>
+      </div>
+
+      <div class="download-card">
+        <img src="img/blog2.jpg">
+        <h3>Computer Materials</h3>
+        <span>Purchased: 01 Jan 2026</span>
+        <a href="#" class="btn">Download</a>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

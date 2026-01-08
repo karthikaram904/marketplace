@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Product</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    .text-center.logo-top img {
+  margin-bottom: 20px;
+}
+
+    body {
+      background: #f5f6fa;
+    }
+
+    .dashboard {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #111;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .sidebar nav a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      padding: 12px 0;
+    }
+
+    .sidebar nav a.active,
+    .sidebar nav a:hover {
+      color: #FFD333;
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .content h1 {
+      margin-bottom: 20px;
+    }
+
+    /* Form box */
+    .form-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 700px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .btn {
+      background: #FFD333;
+      color: #111;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .sidebar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <a href="index.html" class="text-center logo-top"><img src="img/digi-logo.png" style="width:180px"></a>
+    
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="buyer-downloads.html">My Downloads</a>
+      <a href="upload-product.html" class="active">Upload Product</a>
+      <a href="sales.html">Sales</a>
+      <a href="profile.html">Profile</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <h1>Upload Product</h1>
+
+    <div class="form-box">
+
+      <form action="#" method="post" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <label>Product Title</label>
+          <input type="text" placeholder="Enter product name">
+        </div>
+
+        <div class="form-group">
+          <label>Category</label>
+          <select>
+            <option>Select category</option>
+            <option>Templates</option>
+            <option>UI Kits</option>
+            <option>Icons</option>
+            <option>Fonts</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Price (₹)</label>
+          <input type="number" placeholder="Enter price">
+        </div>
+
+        <div class="form-group">
+          <label>Product Description</label>
+          <textarea placeholder="Write product details..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Thumbnail Image</label>
+          <input type="file">
+        </div>
+
+        <div class="form-group">
+          <label>Product File (ZIP)</label>
+          <input type="file">
+        </div>
+
+        <button type="submit" class="btn">Upload Product</button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f6fa;
+    }
+    .text-center.logo-top {
+  margin-bottom: 20px;
+}
+
+    .dashboard {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #111;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .sidebar nav a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      padding: 12px 0;
+    }
+
+    .sidebar nav a.active,
+    .sidebar nav a:hover {
+      color: #FFD333;
+    }
+
+    /* Content */
+    .content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .content h1 {
+      margin-bottom: 20px;
+    }
+
+    /* Stats cards */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .stat-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .stat-card h3 {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    .stat-card p {
+      font-size: 22px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    /* Table */
+    .table-box {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      font-size: 14px;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background: #f9f9f9;
+      font-weight: bold;
+    }
+
+    .status {
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .completed {
+      background: #e6f8ed;
+      color: #2e8b57;
+    }
+
+    .pending {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .sidebar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <a href="index.html" class="text-center logo-top"><img src="img/digi-logo.png" style="width:180px"></a>
+    
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="buyer-downloads.html">My Downloads</a>
+      <a href="upload-product.html">Upload Product</a>
+      <a href="sales.html" class="active">Sales</a>
+      <a href="profile.html">Profile</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <h1>Sales Overview</h1>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Total Sales</h3>
+        <p>₹12,450</p>
+      </div>
+      <div class="stat-card">
+        <h3>Total Orders</h3>
+        <p>38</p>
+      </div>
+      <div class="stat-card">
+        <h3>This Month</h3>
+        <p>₹3,200</p>
+      </div>
+      <div class="stat-card">
+        <h3>Pending Payout</h3>
+        <p>₹1,150</p>
+      </div>
+    </div>
+
+    <!-- Sales Table -->
+    <div class="table-box">
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Product</th>
+            <th>Buyer</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1023</td>
+            <td>Desktop</td>
+            <td>Rahul</td>
+            <td>₹799</td>
+            <td>12 Jan 2026</td>
+            <td><span class="status completed">Completed</span></td>
+          </tr>
+          <tr>
+            <td>#1021</td>
+            <td>Mobile</td>
+            <td>Anitha</td>
+            <td>₹499</td>
+            <td>10 Jan 2026</td>
+            <td><span class="status completed">Completed</span></td>
+          </tr>
+          <tr>
+            <td>#1019</td>
+            <td>Tablet</td>
+            <td>Arun</td>
+            <td>₹299</td>
+            <td>08 Jan 2026</td>
+            <td><span class="status pending">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Digital Store</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <style>
+    body {
+      overflow-x: hidden;
+    }
+    .about-hero {
+      background: #FFD333;
+      padding: 80px 0;
+    }
+    .about-hero h1 {
+      font-weight: 700;
+    }
+    .about-img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body class="about-pag">
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-1 px-xl-5 top-bar">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center h-100">
+                    <a class="text-body mr-3 active" href="about.html">About</a>
+                    <a class="text-body mr-3" href="contact.html">Contact</a>
+                    <a class="text-body mr-3" href="">Help</a>
+                    <a class="text-body mr-3" href="">FAQs</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="dropdown ml-3">
+  <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown">
+    My Account
+  </button>
+
+  <div class="dropdown-menu dropdown-menu-right">
+    <a class="dropdown-item" href="login.html">Sign In</a>
+    <a class="dropdown-item" href="register.html">Sign Up</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="my-account.html">My Account</a>
+    <a class="dropdown-item text-danger" href="log-out.html">Logout</a>
+  </div>
+  <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+  🌙
+</button>
+<button id="rtl-toggle" class="rtl-btn" aria-label="Toggle RTL">
+  ⇄
+</button>
+
+</div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-6 d-inline-flex align-items-center d-block d-lg-none">
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-heart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex top-bar-menu">
+            <div class="col-lg-4 logo-img">
+                <a href="" class="text-decoration-none">
+                    <img src="img/digi-logo.png">
+                    <!-- <span class="h1 text-uppercase text-primary bg-dark px-2">Multi</span>
+                    <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Shop</span> -->
+                </a>
+            </div>
+            <div class="col-lg-4 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-6 text-right">
+                <p class="m-0">Customer Service</p>
+                <h5 class="m-0">+012 345 6789</h5>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
+                    <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Categories</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+                    <div class="navbar-nav w-100">
+                        <a href="" class="nav-item nav-link">Dresses</a>
+                        <a href="" class="nav-item nav-link">Shirts</a>
+                        <a href="" class="nav-item nav-link">Jeans</a>
+                        <a href="" class="nav-item nav-link">Swimwear</a>
+                        <a href="" class="nav-item nav-link">Sleepwear</a>
+                        <a href="" class="nav-item nav-link">Sportswear</a>
+                        <a href="" class="nav-item nav-link">Jumpsuits</a>
+                        <a href="" class="nav-item nav-link">Blazers</a>
+                        <a href="" class="nav-item nav-link">Jackets</a>
+                        <a href="" class="nav-item nav-link">Shoes</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0 res-mbl">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <img src="img/digi-logo.png">
+                        <!-- <span class="h1 text-uppercase text-dark bg-light px-2">Multi</span>
+                        <span class="h1 text-uppercase text-light bg-primary px-2 ml-n1">Shop</span> -->
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <div class="dropdown ml-3">
+                            <a href="#" class="nav-item nav-link dropdowntoggle" data-toggle="dropdown">Home</a>
+
+   <div class="dropdown-menu dropdown-menu-right">
+    <a class="dropdown-item" href="index.html">Home1</a>
+    <a class="dropdown-item" href="home2.html">Home2</a>
+</div></div>
+
+                            <a href="shop.html" class="nav-item nav-link">Shop</a>
+                            <a href="cart.html" class="nav-item nav-link">Cart</a>
+                            <a href="checkout.html" class="nav-item nav-link">Checkout</a>
+                            <a href="confirmation.html" class="nav-item nav-link">Confirmation</a>
+                            <a href="tracking.html" class="nav-item nav-link">Tracking</a>
+                           <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="dashboard.html" class="nav-item nav-link">Dashboard</a>
+                        </div>
+                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
+                            <a href="" class="btn px-0">
+                                <i class="fas fa-heart text-primary"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a>
+                            <a href="cart.html" class="btn px-0 ml-3">
+                                <i class="fas fa-shopping-cart text-primary"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+   
+
+
+    <!-- HERO SECTION -->
+<section class="about-hero text-center">
+  <div class="container">
+    <h1>About Us</h1>
+    <p class="mt-3">Who we are & what we do</p>
+  </div>
+</section>
+
+<!-- ABOUT CONTENT -->
+<!-- ABOUT US SECTION -->
+<section class="py-5">
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <!-- Image -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="img/about.jpg" alt="About Us" class="img-fluid about-img">
+      </div>
+
+      <!-- Content -->
+      <div class="col-md-6">
+        <span class="about-tag">About Us</span>
+        <h2 class="font-weight-bold mt-2">
+          We Are a Trusted Digital Solution Provider
+        </h2>
+        <p class="text-muted mt-3">
+          We provide high-quality digital products and creative solutions designed to help individuals and businesses grow online. Our offerings include professionally designed templates, UI kits, plugins, and digital resources that are easy to use, fully customizable, and built with modern standards. Each product is carefully crafted to ensure performance, usability, and long-term value.
+        </p>
+
+        <ul class="about-list mt-4">
+          <li><i class="fas fa-check"></i> Professional & Experienced Team</li>
+          <li><i class="fas fa-check"></i> Customer-focused Approach</li>
+          <li><i class="fas fa-check"></i> Reliable & Secure Services</li>
+        </ul>
+
+        <a href="about.html" class="btn btn-warning mt-4 px-4">
+          Learn More
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- OUR MISSION -->
+<!-- MISSION VISION VALUES -->
+<section class="py-5 bg-light mis-vis">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="font-weight-bold">Our Purpose</h2>
+      <p class="text-muted mt-2">
+        What drives us forward
+      </p>
+    </div>
+
+    <div class="row">
+
+      <!-- Mission -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center p-4 bg-white h-100">
+          <div class="mb-3">
+            <i class="fas fa-bullseye fa-3x" style="color:#FFD333;"></i>
+          </div>
+          <h5>Our Mission</h5>
+          <p class="text-muted">
+            To provide reliable, affordable, and innovative digital solutions
+            that help businesses grow and succeed.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center p-4 bg-white h-100">
+          <div class="mb-3">
+            <i class="fas fa-eye fa-3x" style="color:#FFD333;"></i>
+          </div>
+          <h5>Our Vision</h5>
+          <p class="text-muted">
+            To become a trusted digital partner recognized for quality,
+            creativity, and customer satisfaction.
+          </p>
+        </div>
+      </div>
+
+      <!-- Values -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center p-4 bg-white h-100">
+          <div class="mb-3">
+            <i class="fas fa-heart fa-3x" style="color:#FFD333;"></i>
+          </div>
+          <h5>Our Values</h5>
+          <p class="text-muted">
+            Integrity, innovation, teamwork, and a strong commitment to
+            delivering excellence in everything we do.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- WHO WE ARE -->
+<section class="py-5 bg-light who-we">
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <!-- Content -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <span class="who-tag">Who We Are</span>
+        <h2 class="font-weight-bold mt-2">
+          We Build Smart Digital Experiences
+        </h2>
+
+        <p class="text-muted mt-3">
+          We are a passionate team dedicated to creating high-quality digital products and solutions for creators, businesses, and entrepreneurs. Our focus is on building user-friendly, modern, and reliable digital assets that help people save time and create professional results with ease.
+
+Driven by creativity and innovation, we believe in simple design, clean structure, and practical solutions. Whether you are just starting out or an experienced professional, we are here to support your journey with tools that empower your ideas and bring them to life.
+        </p>
+
+        <p class="text-muted">
+          Our goal is to help brands grow by combining creativity,
+          technology, and strategy.
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-6 mb-3">
+            <h4 class="mb-0" style="color:#FFD333;">10+</h4>
+            <small class="text-muted">Years Experience</small>
+          </div>
+          <div class="col-6 mb-3">
+            <h4 class="mb-0" style="color:#FFD333;">500+</h4>
+            <small class="text-muted">Happy Clients</small>
+          </div>
+        </div>
+
+        <a href="about.html" class="btn btn-warning mt-3 px-4">
+          Read More
+        </a>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-6 text-center">
+        <img src="img/offer-2.jpg" alt="Who We Are" class="img-fluid who-img">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="py-5">
+  <div class="container">
+    
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="font-weight-bold">Why Choose Us</h2>
+      <p class="text-muted mt-2">
+        We deliver quality, trust, and innovation
+      </p>
+    </div>
+
+    <div class="row">
+
+      <!-- Item 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center p-4 border h-100">
+          <div class="mb-3">
+            <i class="fa fa-check-circle fa-3x" style="color:#FFD333;"></i>
+          </div>
+          <h5>Quality Products</h5>
+          <p class="text-muted">
+            We offer high-quality digital products that meet industry standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center p-4 border h-100">
+          <div class="mb-3">
+            <i class="fa fa-headset fa-3x" style="color:#FFD333;"></i>
+          </div>
+          <h5>24/7 Support</h5>
+          <p class="text-muted">
+            Our support team is always available to help you anytime.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center p-4 border h-100">
+          <div class="mb-3">
+            <i class="fa fa-lock fa-3x" style="color:#FFD333;"></i>
+          </div>
+          <h5>Secure Payments</h5>
+          <p class="text-muted">
+            We ensure safe and secure transactions for all customers.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
+                <p class="mb-4">From everyday essentials to statement outfits, our collection blends comfort with modern style. Discover flattering fits, premium fabrics, and designs that make you feel confident and stylish.</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">My Account</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
+                        <p>Have questions or need support? Get in touch with us — we’re happy to help!</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your Email Address">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                        <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-secondary">
+                    <a class="text-primary" href="#">Copyright © 2026.</a> All Rights Reserved. 
+                    <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                    <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                    Designed by <a class="text-primary" href="#">Magtanglobal</a>
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

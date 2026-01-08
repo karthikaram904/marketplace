@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <style type="text/css">
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 12px 0;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+  color: #FFD333;
+}
+.text-center.logo-top img {
+  margin-bottom: 20px;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.content h1 {
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: #FFD333;
+  color: #111;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <a href="index.html" class="text-center logo-top"><img src="img/digi-logo.png" style="width:180px"></a>
+    
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="buyer-downloads.html">My Downloads</a>
+      <a href="upload-product.html">Upload Product</a>
+      <a href="sales.html">Sales</a>
+      <a href="profile.html">Profile</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+
+    <h1>Welcome Back 👋</h1>
+
+    <!-- Cards -->
+    <div class="cards">
+
+      <!-- Buyer Card -->
+      <div class="card">
+        <h3>My Purchases</h3>
+        <p>Access your purchased assets & downloads</p>
+        <a href="buyer-downloads.html" class="btn">View Library</a>
+      </div>
+
+      <!-- Creator Card -->
+      <div class="card">
+        <h3>Upload Products</h3>
+        <p>Add new assets to sell</p>
+        <a href="upload-product.html" class="btn">Upload Now</a>
+      </div>
+
+      <!-- Sales Card -->
+      <div class="card">
+        <h3>Sales Overview</h3>
+        <p>Track your product sales</p>
+        <a href="sales.html" class="btn">View Sales</a>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
