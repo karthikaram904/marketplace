@@ -816,5 +816,34 @@ width:180px;
   text-align: right !important;
   display: inline-block !important;
 }
+	   /* navbar height stable */
+  .navbar {
+    position: relative;
+    z-index: 9999;
+  }
+
+  /* menu overlay */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #000;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  /* prevent banner shift */
+  .hero-header,
+  .carousel,
+  .container-fluid.py-5 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+.top-bar .dropdown-menu.dropdown-menu-right.show {
+  z-index: 99999 !important;
+}
 
 }
